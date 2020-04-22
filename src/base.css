@@ -1,0 +1,35 @@
+.el-button-group .el-row .el-button{
+  width: 70px;
+  font-size: 16px;
+}
+.row{
+  margin-top: 50px;
+}
+.el-button-group .el-row{
+  height: 50px;
+}
+.paint .el-button{
+  width: 240px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.el-aside {
+  background-color: #D3DCE6;
+  color: #333;
+  text-align: center;
+  width: 300px;
+  padding-top: 50px;
+}
+
+.el-main {
+  background-color: #E9EEF3;
+  color: #333;
+  text-align: center;
+  line-height: 160px;
+}
+.el-container{
+  width: 800px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
