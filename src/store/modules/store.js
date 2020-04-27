@@ -5,41 +5,21 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 Vue.use(Vuex)
-const state= {
-        status: 0,// 0: 待输入卡号 1: 待输入密码 2:待选择业务
-        account: {
-            objectId: '',
-            account: '',
-            password: '',
-            balance: '',
-            type: 0,
-        }
-    }
-    const getters={
-        account: state => state.account,
-        status: state => state.status
-    }
-   const mutations={
-        SET_ACCOUNT: (state, account) =>{
-            state.account = account
-        },
-        CLEAR_ACCOUNT: (state) =>{
-            state.account = {}
-        },
-        SET_STATUS: (state) =>{
-            state.status += 1
-        },
-        STATUS: (state,status) =>{
-          state.status = status
-        },
-        CLEAR_STATUS: (state) =>{
-            state.status = 0
-        }
+const state = {
+  status: 0,// 0: 待输入卡号 1: 待输入密码 2:待选择业务
+}
+const getters = {
 
-    }
-  const  actions={
+  status: state => state.status
+}
+const mutations = {
 
-    }
+  STATUS: (state, status) => {
+    state.status = status
+  }
+
+}
+const actions = {}
 
 
 export default new Vuex.Store({
